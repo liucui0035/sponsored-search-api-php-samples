@@ -1,13 +1,10 @@
 --------------------------------
 【バージョン】
 --------------------------------
-Ver5.2.0
+Ver5.1.0
 
 ■変更履歴
 -----------
-2015/5/20:
-- Version5.2に対応しました。
-
 2014/6/13:
 - Version5.1に対応しました。
 
@@ -42,9 +39,6 @@ PHPのSoapClientライブラリを使用してAPIを呼び出す形になって�
 ・以下は直接実行できるサンプルプログラムです。
 
 - accountSample/AccountSample.php                     :AccountServiceによるアカウント参照、更新処理のサンプルです。
-- adCustomizerSample/AdCustomizerSample               :AdGroupAdService/FeedItemService/FeedFolderService/AdGroupCriterionService/AdGroupService/CampaignServiceによるデータ自動挿入機能の登録、参照、更新、削除処理のサンプルです。
-- adCustomizerSample/FeedFolderServiceSample.php      :FeedFolderServiceによるフィードフォルダーの登録、参照、更新、削除処理のサンプルです。
-- adCustomizerSample/FeedItemServiceSample.php        :FeedItemServiceによるフィードアイテムの登録、参照、更新、削除処理のサンプルです。
 - adDisplayOptionSample/AdDisplayOptionSample.php     :FeedItemService/CampaignFeedService/AdGroupFeedServiceによる広告表示オプションの登録、参照、更新処理のサンプルです。
 - adSample/AdSample.php                               :BiddingStrategyService/CampaignService/CampaignTargetService/CampaignCriterionService/AdGroupService/AdGroupCriterionService/AdGroupAdService/AdGroupBidMultiplierServiceによる入稿処理のサンプルです。
 - adSample/BiddingStrategyServiceSample.php           :BiddingStrategyServiceによる自動入札設定の登録、参照、更新、削除処理のサンプルです。
@@ -111,13 +105,6 @@ ADGROUPID           : 広告グループIDを記述（必須）
 ADGROUPCRITERIONIDS : 広告グループのクライテリアIDを記述（任意）
                       カンマ区切りで複数IDを指定することができます。
 
-以下、IDはAdCustomizerSampleを動作させる際に必要となります。
-FEEDFOLDERID           : フィードフォルダーIDを記述（必須）
-INTEGERFEEDATTRIBUTEID : PlaceholderFieldがAD_CUSTOMIZER_INTEGERで登録されたフィードアトリビュートIDを記述（必須）
-PRICEFEEDFOLDERID      : PlaceholderFieldがAD_CUSTOMIZER_PRICEで登録されたフィードアトリビュートIDを記述（必須）
-DATEFEEDFOLDERID       : PlaceholderFieldがAD_CUSTOMIZER_DATEで登録されたフィードアトリビュートIDを記述（必須）
-STRINGFEEDFOLDERID     : PlaceholderFieldがAD_CUSTOMIZER_STRINGで登録されたフィードアトリビュートIDを記述（必須）
-
 --------------------------------
 【実行】
 --------------------------------
@@ -127,9 +114,6 @@ STRINGFEEDFOLDERID     : PlaceholderFieldがAD_CUSTOMIZER_STRINGで登録され�
 ■実行例
 ---------------------------------------
 $ php src/accountSample/AccountSample.php
-$ php src/adCustomizerSample/AdCustomizerSample.php
-$ php src/adCustomizerSample/FeedFolderServiceSample.php
-$ php src/adCustomizerSample/FeedItemServiceSample.php
 $ php src/adDisplayOptionSample/AdDisplayOptionSample.php
 $ php src/adSample/AdSample.php
 $ php src/balanceSample/BalanceSample.php

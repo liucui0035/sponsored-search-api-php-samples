@@ -1,13 +1,10 @@
 --------------------------------
 <<Version>>
 --------------------------------
-Ver5.2.0
+Ver5.1.0
 
 [Change history]
 -----------
-2015/5/20:
-- Correspond to V5.2.
-
 2014/6/13:
 - Correspond to V5.1.
 
@@ -36,12 +33,8 @@ PHP file is stored in order to describe each setting used in the sample program 
 
 [src directory]
 The following programs are stored.
-
 * Sample programs can be executed directly. 
 - accountSample/AccountSample.php                     : Sample of Get and Mutate operation for account information via AccountService.
-- adCustomizerSample/AdCustomizerSample               : Sample of Get and Mutate operation for data auto insertion via AdGroupAdService/FeedItemService/FeedFolderService/AdGroupCriterionService/AdGroupService/CampaignService.
-- adCustomizerSample/FeedFolderServiceSample.php      : Sample of Get and Mutate operation for feed (data auto insertion) folder via FeedFolderService.
-- adCustomizerSample/FeedItemServiceSample.php        : Sample of Get and Mutate operation for feed item via FeedItemService.
 - adDisplayOptionSample/AdDisplayOptionSample.php     : Sample of Get and Mutate operation of Ad Display Option via FeedItemService/CampaignFeedService/AdGroupFeedService.
 - adSample/AdSample.php                               : Sample of Ad submission via  BiddingStrategyService/CampaignService/CampaignTargetService/CampaignCriterionService/AdGroupService/AdGroupCriterionService/AdGroupAdService/AdGroupBidMultiplierService.
 - adSample/BiddingStrategyServiceSample.php           : Sample of Get and Mutate operation for auto bidding via BiddingStrategyService.
@@ -77,7 +70,7 @@ It stores the upload file when you execute BulkUploadSample.
 --------------------------------
 <<Preparation>>
 --------------------------------
-Please install followings to build operation environment for PHP regardless of whether the OS is Unix or Windows.
+Please install followings to build operation environment for PHP regardless of whether your OS is Unix or Windows.
 
 PHP 5.3.13 or later version with the following options enabled:
  (1) Japanese language module(php_mbstring)
@@ -94,19 +87,12 @@ ONBEHALFOFACCOUNTID : Optional item
 ONBEHALFOFPASSWORD  : Optional item
 ACCOUNTID           : Required item
 
-The following ID is necessary to use BidLandscapeSample.
+The following ID is necessary when you use BidLandscapeSample.
 BIDDINGSTRATEGYID   : Required item
 CAMPAIGNID          : Required item
 ADGROUPID           : Required item
 ADGROUPCRITERIONIDS : Optional item
                       You can set plural ID in Comma Separated Value.
-
-The following ID is necessary to use AdCustomizerSample.
-FEEDFOLDERID           : Required item
-INTEGERFEEDATTRIBUTEID : Required item
-PRICEFEEDFOLDERID      : Required item
-DATEFEEDFOLDERID       : Required item
-STRINGFEEDFOLDERID     : Required item
 
 --------------------------------
 <<Execution>>
@@ -117,9 +103,6 @@ Execute each sample program.
 [e.g.]
 ---------------------------------------
 $ php src/accountSample/AccountSample.php
-$ php src/adCustomizerSample/AdCustomizerSample.php
-$ php src/adCustomizerSample/FeedFolderServiceSample.php
-$ php src/adCustomizerSample/FeedItemServiceSample.php
 $ php src/adDisplayOptionSample/AdDisplayOptionSample.php
 $ php src/adSample/AdSample.php
 $ php src/balanceSample/BalanceSample.php

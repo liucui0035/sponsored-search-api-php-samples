@@ -2,7 +2,7 @@
 //-----------------------------------------------------------------
 // common defines
 //-----------------------------------------------------------------
-define('API_VERSION', 'V5.2');
+define('API_VERSION', 'V5.1');
 define('API_NS',      'http://ss.yahooapis.jp/V5');
 define('XMLSCHEMANS', 'http://www.w3.org/2001/XMLSchema-instance');
 
@@ -51,12 +51,3 @@ define('ADGROUPID',           'xxxxxxxx');
 //-----------------------------------------------------------------
 //define('ADGROUPCRITERIONIDS', 'xxxxxxxx,xxxxxxxx');
 
-// for adCustomizer
-//-----------------------------------------------------------------
-// FeedFolder
-//-----------------------------------------------------------------
-define('FEEDFOLDERID',           'xxxxxxxx');
-define('INTEGERFEEDATTRIBUTEID', 'xxxxxxxx');
-define('PRICEFEEDFOLDERID',      'xxxxxxxx');
-define('DATEFEEDFOLDERID',       'xxxxxxxx');
-define('STRINGFEEDFOLDERID',     'xxxxxxxx');

@@ -70,6 +70,8 @@ function addAdGroupAd($accountId, $campaignId, $adGroupId)
         'operations' => array(
             'operator' => 'ADD',
             'accountId' => $accountId,
+            'campaignId' => $campaignId,
+            'adGroupId' => $adGroupId,
             'operand' => $operand,
         ),
     );
@@ -171,6 +173,8 @@ function setAdGroupAd($accountId, $campaignId, $adGroupId, $adGroupAdValues)
         'operations' => array(
             'operator' => 'SET',
             'accountId' => $accountId,
+            'campaignId' => $campaignId,
+            'adGroupId' => $adGroupId,
             'operand' => $operand,
         ),
     );
@@ -228,6 +232,8 @@ function removeAdGroupAd($accountId, $campaignId, $adGroupId, $adGroupAdValues)
         'operations' => array(
             'operator' => 'REMOVE',
             'accountId' => $accountId,
+            'campaignId' => $campaignId,
+            'adGroupId' => $adGroupId,
             'operand' => $operand,
         ),
     );
@@ -282,11 +288,6 @@ function getAdGroupAd($accountId, $campaignId, $adGroupId, $adGroupAdValues)
             'campaignIds' => array($campaignId),
             'adGroupIds' => array($adGroupId),
             'adIds' => $adIds,
-            'adTypes' => array(
-                'TEXT_AD2',
-                'MOBILE_AD',
-                'APP_AD',
-            ),
             'userStatuses' => array(
                 'ACTIVE',
                 'PAUSED',

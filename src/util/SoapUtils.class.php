@@ -57,51 +57,6 @@ class SoapUtils {
     }
 
     /**
-     * get FeedFolder ID from config file.
-     * @return long feedFolder ID
-     * @access public
-     */
-    public static function getFeedFolderId(){
-        return FEEDFOLDERID;
-    }
-
-    /**
-     * get Integer Type FeedAttribute ID from config file.
-     * @return long Integer Type FeedAttribute ID
-     * @access public
-     */
-    public static function getIntegerFeedAttributeId(){
-        return INTEGERFEEDATTRIBUTEID;
-    }
-
-    /**
-     * get Price Type FeedAttribute ID from config file.
-     * @return long Price Type FeedAttribute ID
-     * @access public
-     */
-    public static function getPriceFeedAttributeId(){
-        return PRICEFEEDFOLDERID;
-    }
-
-    /**
-     * get Date Type FeedAttribute ID from config file.
-     * @return long Date Type FeedAttribute ID
-     * @access public
-     */
-    public static function getDateFeedAttributeId(){
-        return DATEFEEDFOLDERID;
-    }
-
-    /**
-     * get String Type FeedAttribute ID from config file.
-     * @return long String Type FeedAttribute ID
-     * @access public
-     */
-    public static function getStringFeedAttributeId(){
-        return STRINGFEEDFOLDERID;
-    }
-
-    /**
      * get service WSDL URL.
      * @param string $service_name SOAP API service name.
      * @return string WSDL URL
